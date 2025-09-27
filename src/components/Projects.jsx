@@ -47,7 +47,8 @@ const Projects = () => {
             <div className="project-img">
               <img src={p.img} alt={p.title} />
               <div className="overlay">
-                <a href="#" className="view-btn">
+                
+                <a href="hi" className="view-btn">
                   
                 </a>
               </div>

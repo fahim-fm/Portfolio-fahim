@@ -1,25 +1,24 @@
 import React, { useState } from "react";
-import "./Header.css";
+
 import logo from "../assets/logo.png";
 
-const Header = () => {
+const Header = ({ darkMode, setDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDarkMode = () => setDarkMode(!darkMode);
 
   return (
     <header className="header">
-      {/* Logo */}
       <div className="logo">
         <img src={logo} alt="Mumair Logo" />
       </div>
 
-      {/* Hamburger Icon */}
       <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
         <span className={isOpen ? "line open" : "line"}></span>
         <span className={isOpen ? "line open" : "line"}></span>
         <span className={isOpen ? "line open" : "line"}></span>
       </div>
 
-      {/* Navigation */}
       <nav className={isOpen ? "nav active" : "nav"}>
         <ul className="nav-links">
           <li><a href="#home" onClick={() => setIsOpen(false)}>Home</a></li>
@@ -32,6 +31,9 @@ const Header = () => {
         <a href="/cv.pdf" className="cv-btn" download onClick={() => setIsOpen(false)}>
           Download CV
         </a>
+        <button className="dark-toggle" onClick={toggleDarkMode}>
+          {darkMode ? "🌞" : "🌙"}
+        </button>
       </nav>
     </header>
   );

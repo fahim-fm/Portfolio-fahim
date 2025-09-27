@@ -1,21 +1,21 @@
 import React from "react";
-import "./Testimonials.css";
 
-const Testimonials = () => {
+
+const Contact = () => {
   return (
-    <section className="testimonials">
-      <h2>Testimonials</h2>
-      <p>Lorem ipsum dolor sit amet consectetur.</p>
-      <div className="testimonial-card">
-        <img src="https://via.placeholder.com/80" alt="client" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur. Enim cursus odio consequat in.
-        </p>
-        <h4>Name</h4>
-        <span>CEO</span>
+    <section className="contact" id="contact">
+      <h2>Let’s Design Together</h2>
+      <p className="subtitle">
+        Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh
+        lectus netus in.
+      </p>
+
+      <div className="contact-box">
+        <input type="email" placeholder="Enter Your Email" />
+        <button>Contact Me</button>
       </div>
     </section>
   );
 };
 
-export default Testimonials;
+export default Contact;

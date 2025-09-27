@@ -2,6 +2,7 @@ import React from "react";
 import heroImg from "../assets/pahim.png";
 
 
+
 const Hero = () => {
   return (
     <section id="home" className="hero">

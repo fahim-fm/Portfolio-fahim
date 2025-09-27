@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import client1 from "../assets/pahim.png";
 
-
+import "./Testimonials.css";
 const Testimonials = () => {
   const testimonials = [
     {

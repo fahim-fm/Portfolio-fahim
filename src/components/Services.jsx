@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./Services.css";
 
 // import your svg icons
 import uiuxIcon from "../assets/icons/logo.svg";

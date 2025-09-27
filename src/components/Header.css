@@ -1,0 +1,126 @@
+/* Header Base */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 8%;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Logo */
+.logo img {
+  height: 45px;
+  width: auto;
+  display: block;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ff6600;
+}
+
+/* CV Button */
+.cv-btn {
+  background: #ff6600;
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cv-btn:hover {
+  background: #e25500;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Mobile Menu */
+@media (max-width: 900px) {
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 70%;
+    background: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    transition: right 0.4s ease-in-out;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+  }
+
+  .nav.active {
+    right: 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cv-btn {
+    padding: 12px 26px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Animate Hamburger */
+.hamburger .line.open:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+.hamburger .line.open:nth-child(2) {
+  opacity: 0;
+}
+.hamburger .line.open:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}

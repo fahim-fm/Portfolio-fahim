@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "./Projects.css";
 // Example project thumbnails (replace with your images)
 import proj1 from "../assets/p1.jpg";
 import proj2 from "../assets/p1.jpg";

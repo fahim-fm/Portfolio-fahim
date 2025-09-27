@@ -1,0 +1,93 @@
+:root {
+  --accent: #ff6600;
+  --accent-dark: #e25500;
+  --text: #111;
+  --muted: #666;
+}
+
+.contact {
+  text-align: center;
+  padding: 80px 8%;
+  background: #fff;
+}
+
+.contact h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.contact h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--accent);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.subtitle {
+  color: var(--muted);
+  margin: 10px auto 40px;
+  font-size: 15px;
+  max-width: 520px;
+  line-height: 1.6;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.contact-box input {
+  padding: 14px 16px;
+  width: 320px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: border 0.3s;
+}
+
+.contact-box input:focus {
+  border-color: var(--accent);
+}
+
+.contact-box button {
+  background: var(--accent);
+  color: #fff;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.contact-box button:hover {
+  background: var(--accent-dark);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-box input {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .contact-box button {
+    width: 100%;
+    max-width: 200px;
+  }
+}

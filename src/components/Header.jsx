@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "./Header.css";
 import logo from "../assets/logo.png";
 
 const Header = ({ darkMode, setDarkMode }) => {

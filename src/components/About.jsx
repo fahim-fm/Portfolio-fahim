@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import aboutImg from "../assets/pahim.png"; // replace with your image
+import "./About.css";
 
 
 const About = () => {

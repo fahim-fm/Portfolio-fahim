@@ -1,0 +1,83 @@
+:root {
+  --accent: #ff6600;
+  --bg-dark: #1a1a1a; /* upper footer background */
+  --bg-black: #000;   /* bottom strip background */
+  --text-light: #fff;
+  --muted-light: #aaa;
+}
+
+footer {
+  margin-top: 60px;
+}
+
+/* -------- Upper Footer -------- */
+.footer-main {
+  background: var(--text-light);
+  text-align: center;
+  padding: 50px 8% 40px;
+  color: var(--bg-black);
+}
+
+.footer-logo img {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  list-style: none;
+  margin: 0 auto 25px;
+  padding: 0;
+}
+
+.footer-links li {
+  cursor: pointer;
+  transition: color 0.3s;
+  font-size: 15px;
+}
+
+.footer-links li:hover {
+  color: var(--accent);
+}
+
+/* Social Icons */
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.footer-socials a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-light);
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.footer-socials a:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* -------- Bottom Strip -------- */
+.footer-bottom {
+  background: var(--bg-black);
+  text-align: center;
+  padding: 16px 8%;
+}
+
+.footer-bottom p {
+  color: var(--muted-light);
+  font-size: 14px;
+  margin: 0;
+}

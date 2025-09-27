@@ -2,7 +2,7 @@ import React from "react";
 
 import logo from "../assets/logo.png"; // your logo image
 
-
+import "./Footer.css";
 const Footer = () => {
   return (
     <footer>

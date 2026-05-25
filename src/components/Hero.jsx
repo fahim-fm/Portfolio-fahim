@@ -1,13 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import heroImg from "../assets/pahim.png";
 import "./Hero.css";
 
-
-
 const Hero = () => {
+
+  useEffect(() => {
+    const script = document.createElement("script");
+
+    script.src =
+      "https://publishedelegance.com/d7/a6/2c/d7a62ca2d3fccf70e0ff5ebd05724c00.js";
+
+    script.async = true;
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <section id="home" className="hero">
-      <div className="hero-bg-blob"></div> 
+      <div className="hero-bg-blob"></div>
+
       <div className="hero-text">
         <p className="intro">Hi I am</p>
         <p className="name">Muhammad Umair</p>
@@ -22,13 +37,15 @@ const Hero = () => {
           lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus
           pharetra.
         </p>
-<script src="https://publishedelegance.com/d7/a6/2c/d7a62ca2d3fccf70e0ff5ebd05724c00.js"></script>
 
         <div className="hero-actions">
-          <a href="#contact" className="hire-btn">Hire Me</a>
+          <a href="#contact" className="hire-btn">
+            Hire Me
+          </a>
         </div>
       </div>
-       <div className="img-badge" aria-hidden="true"></div>
+
+      <div className="img-badge" aria-hidden="true"></div>
 
       <div className="hero-img">
         <div className="img-frame">
@@ -37,13 +54,22 @@ const Hero = () => {
           </div>
         </div>
 
-       
-
         <div className="social-icons" aria-hidden="true">
-          <a href="hi" aria-label="Facebook" className="social"><i className="fab fa-facebook-f"></i></a>
-          <a href="hi" aria-label="Twitter" className="social"><i className="fab fa-twitter"></i></a>
-          <a href="hi" aria-label="Instagram" className="social"><i className="fab fa-instagram"></i></a>
-          <a href="hi" aria-label="LinkedIn" className="social"><i className="fab fa-linkedin-in"></i></a>
+          <a href="hi" aria-label="Facebook" className="social">
+            <i className="fab fa-facebook-f"></i>
+          </a>
+
+          <a href="hi" aria-label="Twitter" className="social">
+            <i className="fab fa-twitter"></i>
+          </a>
+
+          <a href="hi" aria-label="Instagram" className="social">
+            <i className="fab fa-instagram"></i>
+          </a>
+
+          <a href="hi" aria-label="LinkedIn" className="social">
+            <i className="fab fa-linkedin-in"></i>
+          </a>
         </div>
       </div>
     </section>

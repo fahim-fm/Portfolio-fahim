@@ -31,7 +31,7 @@ const Footer = () => {
 
       {/* Bottom Strip */}
       <div className="footer-bottom">
-        <p>© 2023 Mumair. All Rights Reserved.</p>
+        <p>© 2024 Mumair. All Rights Reserved.</p>
       </div>
     </footer>
   );
